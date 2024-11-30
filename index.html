@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Tacos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a Tacos Deliciosos</h1>
+    </header>
+
+    <section class="tacos">
+        <h2>Tacos de Carne Asada</h2>
+        <img src="taco1.jpg" alt="Taco de Carne Asada">
+        <p>Disfruta de nuestros deliciosos tacos de carne asada. Precio: <span class="precio">$50</span></p>
+        <button onclick="addToCart('Taco de Carne Asada', 50)">Añadir al carrito</button>
+    </section>
+
+    <section class="tacos">
+        <h2>Tacos al Pastor</h2>
+        <img src="taco2.jpg" alt="Taco al Pastor">
+        <p>Prueba nuestros tacos al pastor. Precio: <span class="precio">$45</span></p>
+        <button onclick="addToCart('Taco al Pastor', 45)">Añadir al carrito</button>
+    </section>
+
+    <section class="tacos">
+        <h2>Tacos de Pollo</h2>
+        <img src="taco3.jpg" alt="Taco de Pollo">
+        <p>Tacos de pollo jugosos y sabrosos. Precio: <span class="precio">$40</span></p>
+        <button onclick="addToCart('Taco de Pollo', 40)">Añadir al carrito</button>
+    </section>
+
+    <section id="cart">
+        <h3>Carrito</h3>
+        <ul id="cartItems"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button onclick="checkout()">Pagar</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tacos Deliciosos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
